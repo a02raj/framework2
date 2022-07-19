@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="18.211">
+    <testcase classname="feature to test google search functionality" name="Check Google search with Chrome" time="10.125">
+        <system-out><![CDATA[Given user is on google search page.........................................passed
+When user searches for capgemini............................................passed
+Then user is navigated to search result.....................................passed
+Then close Browser..........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test google search functionality" name="Check Google search with Mozilla" time="7.936">
+        <system-out><![CDATA[Given user is on google search page.........................................passed
+When user searches for accenture............................................passed
+Then user is navigated to search result.....................................passed
+Then close Browser..........................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

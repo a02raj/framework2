@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="49.591">
+    <testcase classname="Test Orange HRM website" name="Check User Role column is present and search users" time="14.728">
+        <failure message="Element &lt;a id=&quot;menu_admin_UserManagement&quot; class=&quot;arrow&quot; href=&quot;#&quot;&gt; could not be scrolled into view&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'INLEN8520032164', ip: '192.168.29.60', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [d0f2e032-2b8f-4864-8314-d50e3766542a, clickElement {id=2322886a-b017-4c62-974f-7b131e56e150}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0.1, moz:accessibilityChecks: false, moz:buildID: 20220705093820, moz:debuggerAddress: localhost:57284, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 6400, moz:profile: C:\Users\aryraj\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:57284/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Element: [[FirefoxDriver: firefox on WINDOWS (d0f2e032-2b8f-4864-8314-d50e3766542a)] -&gt; xpath: //*[@id=&quot;menu_admin_UserManagement&quot;]]&#10;Session ID: d0f2e032-2b8f-4864-8314-d50e3766542a" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[Given user is on login page.................................................passed
+And login using userid >Admin and Password >admin123........................passed
+Then user is navigated to the homepage......................................passed
+When user clicks on Admin link..............................................passed
+Then user is redirected to user Management..................................failed
+And Goto user Managment > users.............................................skipped
+And Verify User Role column is present......................................skipped
+And Search for bhavana......................................................skipped
+Then logout and close browser...............................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: Element <a id="menu_admin_UserManagement" class="arrow" href="#"> could not be scrolled into view
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'INLEN8520032164', ip: '192.168.29.60', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d0f2e032-2b8f-4864-8314-d50e3766542a, clickElement {id=2322886a-b017-4c62-974f-7b131e56e150}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0.1, moz:accessibilityChecks: false, moz:buildID: 20220705093820, moz:debuggerAddress: localhost:57284, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 6400, moz:profile: C:\Users\aryraj\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:57284/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (d0f2e032-2b8f-4864-8314-d50e3766542a)] -> xpath: //*[@id="menu_admin_UserManagement"]]
+Session ID: d0f2e032-2b8f-4864-8314-d50e3766542a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at assignment.OrangeBackground.user_is_redirected_to_user_Management(OrangeBackground.java:58)
+	at ✽.user is redirected to user Management(file:///C:/Users/aryraj/Desktop/Capgemini/cucumberAdvance/src/test/resources/Features/Assignment.feature:10)
+]]></failure>
+    </testcase>
+    <testcase classname="Test Orange HRM website" name="Check User Role column is present and search users 2" time="17.157">
+        <system-out><![CDATA[Given user is on login page.................................................passed
+And login using userid >Admin and Password >admin123........................passed
+Then user is navigated to the homepage......................................passed
+When user clicks on Admin link..............................................passed
+Then user is redirected to user Management..................................passed
+And Goto user Managment > users.............................................passed
+And Verify User Role column is present......................................passed
+And Search for priyanka.....................................................passed
+Then logout and close browser...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test Orange HRM website" name="Check Employee Name column is present" time="17.542">
+        <system-out><![CDATA[Given user is on login page.................................................passed
+And login using userid >Admin and Password >admin123........................passed
+Then user is navigated to the homepage......................................passed
+When user clicks on level...................................................passed
+And user clicks on My level.................................................passed
+Then Verify Employee Name column is present.................................passed
+Then logout and close browser1..............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
